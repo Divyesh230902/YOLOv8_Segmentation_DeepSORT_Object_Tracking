@@ -12,8 +12,8 @@ from numpy import random
 
 
 import cv2
-from deep_sort_pytorch.utils.parser import get_config
-from deep_sort_pytorch.deep_sort import DeepSort
+from ultralytics.yolo.v8.segment.deep_sort_pytorch.utils.parser import get_config
+from ultralytics.yolo.v8.segment.deep_sort_pytorch.deep_sort import DeepSort
 #Deque is basically a double ended queue in python, we prefer deque over list when we need to perform insertion or pop up operations
 #at the same time
 from collections import deque
