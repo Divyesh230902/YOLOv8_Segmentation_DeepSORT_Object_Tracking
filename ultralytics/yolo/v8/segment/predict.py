@@ -233,6 +233,7 @@ def predict(cfg):
     cfg.model = cfg.model or "yolov8n-seg.pt"
     cfg.imgsz = check_imgsz(cfg.imgsz, min_dim=2)  # check image size
     cfg.source = cfg.source if cfg.source is not None else ROOT / "assets"
+    # cfg.classes = None
 
     predictor = SegmentationPredictor(cfg)
     predictor()
